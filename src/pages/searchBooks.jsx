@@ -12,7 +12,7 @@ function SearchBooks() {
   const fetchBooks = async () => {
     try {
       const response = await fetch(
-        "https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=20"
+        "https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=15"
       );
 
       const data = await response.json();
